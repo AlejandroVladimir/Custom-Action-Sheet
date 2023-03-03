@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController" customModule="Custom_Action_Sheet" customModuleProvider="target">
+            <connections>
+                <outlet property="titleLabel" destination="8ct-n4-Csa" id="raG-pi-GRF"/>
+                <outlet property="view" destination="iN0-l3-epB" id="uAG-OO-zbb"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This is a normal text" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8ct-n4-Csa">
+                    <rect key="frame" x="20" y="337.66666666666669" width="353" height="21"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KYK-lm-KHQ">
+                    <rect key="frame" x="57" y="807" width="279" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Click here to see SwiftUI Example"/>
+                    <connections>
+                        <action selector="didTapShow:" destination="-1" eventType="touchUpInside" id="lzp-6E-p7G"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jhO-w8-u7z">
+                    <rect key="frame" x="51.333333333333343" y="408.66666666666669" width="290.33333333333326" height="35"/>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" title="Click here to show the action sheet"/>
+                    <connections>
+                        <action selector="didTapButton:" destination="-1" eventType="touchUpInside" id="nae-v8-ghc"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="jhO-w8-u7z" firstAttribute="top" secondItem="8ct-n4-Csa" secondAttribute="bottom" constant="50" id="9mC-QT-sKU"/>
+                <constraint firstItem="8ct-n4-Csa" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="CE5-2Y-SXG"/>
+                <constraint firstItem="KYK-lm-KHQ" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="FgA-Re-HnP"/>
+                <constraint firstItem="jhO-w8-u7z" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="G7C-Ia-Zdg"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8ct-n4-Csa" secondAttribute="trailing" constant="20" id="VFU-oD-rmS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="KYK-lm-KHQ" secondAttribute="bottom" constant="10" id="pDD-eS-M41"/>
+                <constraint firstItem="jhO-w8-u7z" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="pWo-CH-hBJ"/>
+            </constraints>
+            <point key="canvasLocation" x="138" y="21"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
